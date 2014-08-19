@@ -5,10 +5,25 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+HOMEBREW_PATH="`brew --prefix`"
+
+export RBENV_ROOT="$HOMEBREW_PATH/var/rbenv"
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
+
+# araxis merge path
+if [ -d "/Applications/Araxis Merge.app/Contents/Utilities" ]; then
+  export PATH="$PATH:/Applications/Araxis Merge.app/Contents/Utilities"
+fi
+
+# Haskell Cabal
+if [ -d /Users/steve/.cabal/bin ]; then
+  export PATH="/Users/steve/.cabal/bin:$PATH"
+fi
+
 
