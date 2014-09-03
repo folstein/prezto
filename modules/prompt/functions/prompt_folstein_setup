@@ -71,19 +71,19 @@ prompt_folstein_end() {
 # Assemble the segments
 function prompt_folstein_build {
   # Flags for privileged shell and running jobs
-  prompt_folstein_segment 233 yellow '%(!;⚡ ;)%(1j;%j⚙ ;)'
+  #prompt_folstein_segment 233 yellow '%(!;⚡ ;)%(1j;%j⚙ ;)'
   # Username
-  prompt_folstein_segment 235 white '%n'
+  prompt_folstein_segment 235 241 '%n'
   # Short hostname
-  prompt_folstein_segment 237 black '%m'
+  prompt_folstein_segment 237 243 '%m'
   # The pwd we pre-formatted
-  prompt_folstein_segment 239 black "${_prompt_folstein_pwd}"
+  prompt_folstein_segment 239 232 "${_prompt_folstein_pwd}"
   # If set, the name of the current VCSH repo
   #[[ -n $VCSH_REPO_NAME ]] && prompt_folstein_segment red black "$VCSH_REPO_NAME"
 
   # Git-info stuff
   if $git_status; then
-    prompt_folstein_segment 241 black "${git_info[status]}${(e)git_info[prompt]}"
+    prompt_folstein_segment 241 232 "${git_info[status]}${(e)git_info[prompt]}"
   fi
 
   # Closing

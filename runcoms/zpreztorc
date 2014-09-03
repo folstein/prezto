@@ -29,7 +29,8 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'git' \
   'ruby' \
-  'node' \
+  'haskell' \
+  'tmux' \
   'terminal' \
   'editor' \
   'history' \
@@ -37,8 +38,12 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'syntax-highlighting' \
   'history-substring-search' \
   'prompt'
+
+  #'node' \
+  #'syntax-highlighting' \
 
 #
 # Editor
@@ -69,13 +74,13 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:history-substring-search:color' found ''
+zstyle ':prezto:module:history-substring-search:color' found ''
 
 # Set the query not found color.
-# zstyle ':prezto:module:history-substring-search:color' not-found ''
+zstyle ':prezto:module:history-substring-search:color' not-found ''
 
 # Set the search globbing flags.
-# zstyle ':prezto:module:history-substring-search' globbing-flags ''
+zstyle ':prezto:module:history-substring-search' globbing-flags ''
 
 #
 # Pacman
@@ -123,15 +128,15 @@ zstyle ':prezto:module:prompt' theme 'folstein'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
-#
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+   'main' \
+   'brackets' \
+   'pattern' \
+   'cursor' \
+   'root'
+
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
+#zstyle ':prezto:module:syntax-highlighting' styles \
 #   'builtin' 'bg=blue' \
 #   'command' 'bg=blue' \
 #   'function' 'bg=blue'
@@ -141,20 +146,20 @@ zstyle ':prezto:module:prompt' theme 'folstein'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
-# zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
 
 # Set the tab title format.
-# zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
+zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 
 #
 # Tmux
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
@@ -162,6 +167,6 @@ zstyle ':prezto:module:tmux:auto-start' local 'yes'
 #
 # Node
 #
-zstyle ':prezto:module:node:info:version' format 'version:%v'
+# zstyle ':prezto:module:node:info:version' format 'version:%v'
 
 
