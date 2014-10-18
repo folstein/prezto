@@ -16,13 +16,8 @@
 
 # Print a random, hopefully interesting, adage.
 if (( $+commands[fortune] )); then
-  if (( $+commands[cowsay] )); then
-    #files=(/usr/local/share/cows/*)
-    fortune -a | cowsay -n
-    #cowsay -f `echo ${files[$((RANDOM%${#files}))]}`
-  else
+  if [[ -t 0 || -t 1 ]]; then
     fortune -a
+    print
   fi
-  print
 fi
-
