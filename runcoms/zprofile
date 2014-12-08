@@ -17,8 +17,9 @@ fi
 # Editors
 #
 
-export EDITOR='emacsclient -n'
-export VISUAL='emacsclient -c -n'
+export GIT_EDITOR='/usr/local/bin/emacsclient -t'
+export EDITOR='/usr/local/bin/emacsclient -n'
+export VISUAL='/usr/local/bin/emacsclient -c -n'
 export PAGER='less'
 
 #
