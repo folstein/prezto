@@ -29,8 +29,6 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'git' \
   'ruby' \
-  'haskell' \
-  'tmux' \
   'terminal' \
   'editor' \
   'history' \
@@ -42,6 +40,8 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'prompt'
 
+  #'haskell' \
+  #'tmux' \
   #'node' \
   #'syntax-highlighting' \
 
@@ -50,7 +50,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+# zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -137,10 +137,10 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
    'root'
 
 # Set syntax highlighting styles.
-zstyle ':prezto:module:syntax-highlighting' styles \
-   'builtin' 'bg=blue' \
-   'command' 'bg=blue' \
-   'function' 'bg=blue'
+#zstyle ':prezto:module:syntax-highlighting' styles \
+#   'builtin' 'bg=blue' \
+#   'command' 'bg=blue' \
+#   'function' 'bg=blue'
 
 #
 # Terminal

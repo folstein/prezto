@@ -20,7 +20,3 @@ fi
 if [ -d "/Applications/Araxis Merge.app/Contents/Utilities" ]; then
   export PATH="$PATH:/Applications/Araxis Merge.app/Contents/Utilities"
 fi
-
-alias fixow='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
-
-alias em='/usr/local/bin/emacsclient -c -n'
