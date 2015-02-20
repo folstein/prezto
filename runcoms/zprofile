@@ -17,13 +17,13 @@ fi
 # Editors
 #
 
-#export GIT_EDITOR='/usr/local/bin/emacsclient -t'
-#export EDITOR='/usr/local/bin/emacsclient -n'
-#export VISUAL='/usr/local/bin/emacsclient -c -n'
+export GIT_EDITOR='/usr/local/bin/emacsclient -t'
+export EDITOR='/usr/local/bin/emacsclient -n'
+export VISUAL='/usr/local/bin/emacsclient -c -n'
 
-export GIT_EDITOR='/usr/local/bin/atom -n --wait'
-export EDITOR='/usr/local/bin/atom'
-export HOMEBREW_EDITOR='/usr/local/bin/atom -n'
+#export GIT_EDITOR='/usr/local/bin/atom -n --wait'
+#export EDITOR='/usr/local/bin/atom'
+#export HOMEBREW_EDITOR='/usr/local/bin/atom -n'
 
 export PAGER='less'
 
