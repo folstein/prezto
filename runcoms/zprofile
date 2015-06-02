@@ -17,9 +17,12 @@ fi
 # Editors
 #
 
-export GIT_EDITOR='/usr/local/bin/emacsclient -t'
-export EDITOR='/usr/local/bin/emacsclient -n -a='
-export VISUAL='/usr/local/bin/emacsclient -c -n -a='
+export GIT_EDITOR='/usr/local/bin/edit -w'
+export EDITOR='/usr/local/bin/edit'
+
+#export GIT_EDITOR='/usr/local/bin/emacsclient -t'
+#export EDITOR='/usr/local/bin/emacsclient -n -a='
+#export VISUAL='/usr/local/bin/emacsclient -c -n -a='
 
 #export GIT_EDITOR='/usr/local/bin/atom -n --wait'
 #export EDITOR='/usr/local/bin/atom'
